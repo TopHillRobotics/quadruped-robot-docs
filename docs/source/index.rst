@@ -1,5 +1,5 @@
 Welcome to Ascend Quadruped Documentation!
-===================================
+===========================================
 
 The program has been tested on ``Ubuntu18(gazebo9)`` and ``Ubuntu20(gazebo11)``. 
 Make sure that you computer computation resource is enough. 
@@ -16,7 +16,9 @@ in ``.world`` configuration file of gazebo to be ``1000/2.5 = 400``, and make ``
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    
-   ascend-quadruped-cpp/index
-
+   overview.rst
+   installation.rst
+   gettingstart.rst
+   examples.rst
