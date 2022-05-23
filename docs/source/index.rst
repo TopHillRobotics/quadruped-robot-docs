@@ -1,4 +1,4 @@
-Welcome to Ascend Quadruped Documentation!
+Welcome to ECNU Quadruped Documentation!
 ===========================================
 
 The program has been tested on ``Ubuntu18(gazebo9)`` and ``Ubuntu20(gazebo11)``. 

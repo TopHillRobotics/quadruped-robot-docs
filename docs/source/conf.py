@@ -2,8 +2,8 @@
 
 # -- Project information
 
-project = 'Ascend Quadruped'
-copyright = '2021, Graziella'
+project = 'ECNU Quadruped'
+copyright = '2022, East China Normal University'
 author = 'Gong, Ke'
 
 release = '0.1'
