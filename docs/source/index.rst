@@ -20,5 +20,5 @@ in ``.world`` configuration file of gazebo to be ``1000/2.5 = 400``, and make ``
    
    overview.rst
    installation.rst
-   gettingstart.rst
-   examples.rst
+   HelloQuadrupedRobot.rst
+   demo.rst
