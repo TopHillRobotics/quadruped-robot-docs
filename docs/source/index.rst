@@ -23,4 +23,3 @@ This project supports many quadruped robots (unitree, deep-robotics and Anymal).
    helloworld.rst
    demo.rst
 
-   index.rst

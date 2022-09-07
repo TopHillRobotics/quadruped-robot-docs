@@ -36,11 +36,11 @@ Install the following third party dependencies.
 Compile the codes.
 ==================
 
-Make sure your cmake version is later than 3.15.7
+Make sure your cmake version is 3.15.7 or higher
 
 .. code-block:: console
 
     cd ${your_workspace}
     catkin_make
 
-Please don't forget to run ``source devel/setup.bash`` before you run our project.
+Run ``source devel/setup.bash`` before launching the project.
