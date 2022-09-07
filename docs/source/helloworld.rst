@@ -1,62 +1,57 @@
-Hello quadruped-robot
+Hello World
 *********************
 
-In the distribution of ``demo/demo_hellowold`` is a Hello World project. This introduction is used to help you to have a basic understanding. We'll descirbe the ``demo_helloworld`` in more detail to let you understand the logic of our code better.
+The Hello World demo (``demo/demo_hellowold``) is a good exaple to understand the logistic of running with our code. Here, we use a unitree A1 quadruped robot to explain the helloworld demo.
 
-There we use a1 quadruped robot of unitree to perform a simplest demo.
-
-Launch Gazebo
-=============
-
-Firstly, you should go into your workspace and open a terminal here. Please always run ``source devel/setup.bash`` (or ``source devel/setup.zsh`` if you are using zsh) before running our project. Then you can run ``roslaunch unitree_gazebo normal.launch`` to launch gazebo to load a ``.world`` file and the quadruped robot model. If all goes will you will see gazebo was started after running previous command and the quadruped robot model also show in gazebo with a sit down state.
-
-Run the demo_helloworld
+Initializzing the ROS node
 =======================
 
-Now you should turn on another terminal and go into your workspace. Then run ``rosrun a1sim demo_helloworld``.
-
-Initialize the ros node
-=======================
-
-Our project is based on ROS, so we should initialize the ROS node first. One ROS node is an executable file and different executable files communicate with others by ROS node.
+Since our simulation is developped in ROS, we first need to initialize the ROS node first. It initializes the ROS components that our program needs in order to communicate to other programs.
 
 .. code-block:: c++
 
     ros::init(argc, argv, "demo_helloworld");
     ros::NodeHandle nh;
 
-Get the path
+Getting the YMAL path
 ============
 
-We have to load parameters from ``.yaml`` files and each demo have their own parameters. So we have to get the path of file that is used to storge the ``.yaml`` files.
+Every demo has its own configuration and parameters. These parameters are stored in a ``.yaml`` file. We need to tell where the ``.yaml`` is and later we can load parameters from the given ``.yaml`` file. In this example, a unitree A1 robot is used and its configurations are store in ``a1sim`` for simulation. the helloworld example is stored in the directory ``a1sim``. We can use the following commands to get the directory ``a1sim/demo_helloworld``.
 
 .. code-block:: c++
     std::string pathToPackage = ros::package::getPath("a1sim");
     std::string pathToNode =  pathToPackage + ros::this_node::getName();
 
-Reset the gazebo controller and robot model
+Resetting the Gazebo controller and robot model
 ===========================================
 
-To develop fastly, we do not hope to relaunch gazebo after each time that the quadruped robot fall down or other situation that make the process close accidentally, so we need to reset the gazebo controller and the robot model when we run the demo every time. And this will let gazebo to reload the controller plugins and put the robot model to an fixed position where we set in advance.
+We reset the Gazebo simulator's controller and the robot model. This can avoid relaunching the Gazebo every time when we run the helloword demo repetitively. This allows the Gazebo to reload the controller plugins and locate the robot at a given position and orientation.
 
 .. code-block:: c++
     
     ResetRobotBySystem(nh);
 
-Create the robot
+
+Creating a robot
 ================
 
-After processing in gazebo, we should do some initialization for controller. The most important entity is robot, so we need to create the robot with the parameters in ``.yaml`` file. Then we have to update some attributes in robot by receiving observation from gazebo for an initialization.
+After launching the Gazebo, we create a robot (unitree A1) using the specified parameters stored in the  ``a1sim/demo_helloworld/config/a1_sim.yaml`` file.
 
 .. code-block:: c++
 
     qrRobot *quadruped = new qrRobotA1Sim(nh, pathToNode + "/config/a1_sim.yaml");
+
+ We also need to initialize a few robot properties by receiving observation from Gazebo.
+
+.. code-block:: c++
+
     quadruped->ReceiveObservation();
 
-Execute actions
+
+Executing actions
 ===============
 
-Now we already complete all basic initialization of this demo, we can let the robot to do some action for a look. Firstly we order the dog to stand up from the sit down state. This action will consume 3 seconds and the quadruped robot is abandon doing everything during 5 seconds. The control frequency is 1000Hz. You can change these parameters if you want to see different results.
+Now the initiliazation is finished. We are ready to execute actions. First, we let the robot perform the first action, standing up. It takes 3 seconds to stand up and keep 5 seconds before any other action. The parameter 0.001 is the specified time step (control frequency). You may try different arguments to understand the action. 
 
 .. code-block:: c++
 
@@ -74,11 +69,35 @@ Finally the quadruped robot will sit down in 3 seconds with 1000Hz control frequ
 
     Action::StandUp(quadruped, 3.f, 5.f, 0.001f);
 
-Shut down the ROS node
+
+Finishing and shutting down the ROS node
 ======================
 
-The demo here is end, we should shut down ROS node to end this process.
+After the demo is finished, we shut down the ROS nodes.
 
 .. code-block:: c++
 
     ros::shutdown();
+
+
+Launching the demo
+=============
+
+To run the demo, we first launch Gazebo, a high fidelity robot simulator widely used in ROS community. First, in one terminal, source the setup.bash to set up the environment
+
+.. code-block:: c++
+
+    source ${your_workspace}/devel/setup.bash
+
+Second, run the Gazebo simulator and load a robot.
+
+.. code-block:: c++
+
+    roslaunch unitree_gazebo normal.launch
+
+Third, in a new terminal, launch a demo and run the quadruped controller node. Here, a demo helloworld lets the quadruped robot stand up.
+
+.. code-block:: c++
+
+    rosrun a1sim demo_helloworld
+

@@ -54,7 +54,7 @@ This source code include four directories
 Related publications
 ~~~~~~~~~~~~~~~~~~~~~
 
-This platform has been used in the following publications:
+The algorithms in the following publications may be used in our project. Please check out these papers for more details.
 
 1. |dicarloj2018iros|
 2. |bledt2018iros|

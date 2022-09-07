@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'ECNU Quadruped'
-copyright = '2022, East China Normal University'
-author = 'Gong, Ke'
+project = 'Quadruped@Tophill Lab'
+copyright = '2022@East China Normal University'
+author = 'The Tophill Robotics Lab'
 
 release = '0.1'
 version = '0.1.0'
