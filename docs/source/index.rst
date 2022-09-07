@@ -1,22 +1,22 @@
-Welcome to ECNU Quadruped Documentation!
+The Open Source Quadruped-Robot @The TopHill Robotics
 ===========================================
+Robot Motion and Vision Laboratory at East China Normal University
+Contact: tophill.robotics@gmail.com
 
-The program has been tested on ``Ubuntu18(gazebo9)`` and ``Ubuntu20(gazebo11)``. 
-Make sure that you computer computation resource is enough. 
-The cost time of running a while loop in the main function(s.t., in ``exec/test.cpp``) indicates the information. 
-In gazebo simulation, if the cost time is smaller than 1 ms, the controller is able to run in realtime. 
-If it is larger than 1 ms but smaller than 3ms, the controller runs successfully under ros time, which is slowed down. 
-For example, to keep the controller making action with frequency at 500 Hz(in simulation time measurement), 
-while the loop cost time (in realworld time measurement) is 2.5 ms, you need to set the ``real_time_update_rate`` 
-in ``.world`` configuration file of gazebo to be ``1000/2.5 = 400``, and make ``useRosTime`` true.
+
+This project provides an architecture and some key algorithms to control quadruped robots for robotics researchers and developers. Our codes is written in portable C++. Most of the types defined in the project begin with the qr prefix. Hopefully this is sufficient to avoid name clashing with your program. 
+
+This project supports many quadruped robots (unitree, deep-robotics and Anymal). The codes has been tested under ROS and ``Gazebo 9/11``. 
+
 
 .. note::
 
-   This project is under active development.
+   This project is still under active development.
 
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
    
    overview.rst
    installation.rst
