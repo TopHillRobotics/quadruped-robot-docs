@@ -1,12 +1,6 @@
-.. include:: _static/references.ref
 
 Overview
 =========
-
-------------
-
-Introduction
-~~~~~~~~~~~~
 
 This project provides an architecture and some key algorithms to control quadruped robots, including state estimator, gait generator, stance and swing leg controllers. 
 This project supports three control modes
@@ -38,7 +32,7 @@ The project now supports Unitree A1 robot and DeepRobotics Lite2A robot, and can
 ------------------
 
 Source Code Structure
-~~~~~~~~~~~~~~~~~~~~~
+==================
 
 This source code include four directories
 
@@ -49,19 +43,3 @@ This source code include four directories
 * **quadruped** contains the core algorithms of our project.
 
 * **simulation** contains the configuration to run the simulation.
-
-
-Related publications
-~~~~~~~~~~~~~~~~~~~~~
-
-The algorithms in the following publications may be used in our project. Please check out these papers for more details.
-
-1. |dicarloj2018iros|
-2. |bledt2018iros|
-3. |bledt2018icra|
-4. |focchim2017ar|
-5. |leeyh2017iros|
-6. |dax2020|
-7. |fankhauserp2018icra|
-8. |fankhauserp2018eth|
-9. |kimd2019|
