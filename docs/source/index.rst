@@ -1,6 +1,8 @@
-The Open Source Quadruped-Robot @The TopHill Robotics
+The Open Source Quadruped-Robot 
+@The TopHill Robotics
 ===========================================
 Robot Motion and Vision Laboratory at East China Normal University
+
 Contact: tophill.robotics@gmail.com
 
 
@@ -16,7 +18,6 @@ This project supports many quadruped robots (unitree, deep-robotics and Anymal).
 
 .. toctree::
    :maxdepth: 1
-   :hidden:
    
    overview.rst
    installation.rst
