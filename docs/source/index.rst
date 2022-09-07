@@ -18,7 +18,7 @@ in ``.world`` configuration file of gazebo to be ``1000/2.5 = 400``, and make ``
 .. toctree::
    :maxdepth: 2
    
-   index.rst
-   install.rst
+   overview.rst
+   installation.rst
    helloworld.rst
    demo.rst
