@@ -1,4 +1,4 @@
-Demo
+Demos
 ****
 
 demo_trot_velocity
