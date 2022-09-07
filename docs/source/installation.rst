@@ -1,12 +1,12 @@
 Installation
 ************
 
-Install ROS
+Installing ROS
 ===========
 
 You need install ROS (Robot Operating System) first. We tested the codes under Ubuntu Linux and ROS 1 Melodic Morenia distribution. Other newer ROS distributions are supposed to be supported. Please visit http://www.wiki.ros.org for ROS installation.
 
-Clone the source code.
+Cloning the source code.
 ======================
 
 .. code-block:: console
@@ -17,7 +17,7 @@ Clone the source code.
     catkin_init_workspace
     git clone https://github.com/TopHillRobotics/quadruped-robot/
 
-Install the following third party dependencies.
+Installing the following third party dependencies.
 ===============================================
 
 - Eigen3
@@ -33,7 +33,7 @@ Install the following third party dependencies.
     sudo apt install liblcm-dev
     sudo apt install libglm-dev
 
-Compile the codes.
+Building the codes.
 ==================
 
 Make sure your cmake version is 3.15.7 or higher
