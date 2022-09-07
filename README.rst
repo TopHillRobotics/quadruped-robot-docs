@@ -1,9 +1,10 @@
-Template for the Read the Docs tutorial
+The ReadTheDocs for the open source quadruped robot project developed by
+Robot Motion and Vision Laboratory at East China Normal University
+(The Tophill Robotics Lab)
+
+Contact: tophill.robotics@gmail.com
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
-
-Read the tutorial here:
+Read the ReadTheDocs tutorial here:
 
 https://docs.readthedocs.io/en/stable/tutorial/
