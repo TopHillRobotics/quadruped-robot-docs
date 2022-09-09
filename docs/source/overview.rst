@@ -34,7 +34,7 @@ The project now supports Unitree A1 robot and DeepRobotics Lite2A robot, and can
 Source Code Structure
 ==================
 
-This source code include four directories
+You can find the source code at `GitHub <https://github.com/TopHillRobotics/quadruped-robot/>`. The source code include four directories
 
 * **demo** contains various demos to understand the software architecture and algorithms.
 
