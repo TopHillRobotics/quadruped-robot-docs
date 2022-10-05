@@ -1,3 +1,3 @@
-helloworldsim.rst
+.. include:: helloworldsim.rst
 
-helloworldreal.rst
+.. include:: helloworldreal.rst
