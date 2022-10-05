@@ -21,7 +21,8 @@ This project supports many quadruped robots (Unitree-robotics, Deep-robotics and
    
    overview.rst
    installation.rst
-   helloworld.rst
+   helloworldsim.rst
+   helloworldreal.rst
    demo.rst
    references.rst
 
