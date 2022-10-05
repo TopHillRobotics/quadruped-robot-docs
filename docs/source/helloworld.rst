@@ -1,4 +1,4 @@
-Hello World
+Hello World in Simulation
 *********************
 
 The Hello World demo (``demo/demo_hellowold``) is a good exaple to understand the logistic of running with our code. Here, we use a Unitree A1 quadruped robot to explain the helloworld demo.
