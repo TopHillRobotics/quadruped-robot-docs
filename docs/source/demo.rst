@@ -48,3 +48,23 @@ demo_slam_cartographer
 ==================
 
 This demo shows how to build a map using SLAM and cartographer. 
+
+demo_terrain_slope
+==================
+
+This demo shows how to travel onto a slope. 
+
+demo_terrain_stair
+==================
+
+This demo shows how to travel onto stairs. 
+
+demo_terrain_rough
+==================
+
+This demo shows how to travel in a rough ground. 
+
+demo_terrain_groove
+==================
+
+This demo shows how to walk inside a groove. 
