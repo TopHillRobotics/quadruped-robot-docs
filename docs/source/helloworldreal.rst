@@ -1,3 +1,4 @@
+.. _helloworld_real_reference-label:
 
 Hello World in Real Environments
 *********************
