@@ -1,15 +1,8 @@
 Hello World
 *********************
 
-The Hello World demo (``demo/demo_hellowold``) is also a good exaple to understand the deployment of our code on a real quadruped robot. Here, we also use a Unitree A1 quadruped robot to explain the process.
+The Hello World demo (``demo/demo_hellowold``) is also a good exaple to understand the deployment of our code. The code can be used in Gazebo simulator or for a real quadruped robot. Here, we also use a Unitree A1 quadruped robot to explain the usage process.
 
-.. toctree::
-   :maxdepth: 2
-
-.. literalinclude:: helloworldsim.RST
-  :language: RST
-  
-
-.. literalinclude:: helloworldreal.RST
-  :language: RST  
+* `Hello World in Simulation <helloworldsim.RST>`_
+* `Hellow World for Real Robot <helloworldreal.RST>`_
 
