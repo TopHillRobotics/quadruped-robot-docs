@@ -20,7 +20,7 @@ This project supports many quadruped robots (Unitree-robotics, Deep-robotics and
    :maxdepth: 2
    
    Overview <overview.rst>
-   Code Structure <structure.rst>
+   Source Code Structure <structure.rst>
    Installation <installation.rst>
    Hello World <helloworld.rst>
    Demos <demo.rst>
