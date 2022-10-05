@@ -20,7 +20,12 @@ Every demo has its own configuration and parameters. These parameters are stored
 
 .. code-block:: c++
 
+    std::string pathToPackage = ros::package::getPath("demo");
+    std::string pathToNode =  pathToPackage + ros::this_node::getName();
     std::string robotName = "A1";
+
+The first two lines are unnecessary in the Hello World demo. However, they may be necessary in other demos.
+
 
 Resetting the Gazebo controller and robot model
 ===========================================
@@ -41,7 +46,8 @@ After launching the Gazebo, we create a robot (Unitree A1) using the specified p
 
     qrRobot *quadruped = new qrRobotSim(nh, robotName, LocomotionMode::VELOCITY_LOCOMOTION);
 
- We also need to initialize a few robot properties by receiving observation from Gazebo.
+
+We also need initialize a few robot properties by receiving observation from Gazebo.
 
 .. code-block:: c++
 
