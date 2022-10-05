@@ -28,5 +28,4 @@ The project now supports A1 robot (Unitree-Robotics) and Lite2A robot (Deep-Robo
 .. image:: images/real.gif
     :width: 600
 
-------------------
 
