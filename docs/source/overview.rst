@@ -7,14 +7,13 @@ This project supports three control modes
 
 * **velocity mode** allows a user to control the robot's linear and angular velocity.
 
-* **position mode** generates user-defined gaits using gait configurations.
+* **position mode** generates user-defined gaits using gait configurations and control the robot's step position.
 
 * **hybrid mode** uses position and torque to implement flexible locomotion.
 
-The project now supports Unitree A1 robot and DeepRobotics Lite2A robot, and can be extended to support other quadruped robots such as Unitree AlienGO/GO1, DeepRobotics Jueying/X20 and Anymal. For more information about quadruped robots, check out the following websites
+The project now supports A1 robot (Unitree-Robotics) and Lite2A robot (Deep-Robotics). This project can be easily extended to support other quadruped robots such as AlienGO/GO1 (Unitree-Robotics), Jueying/X20(Deep-Robotics) and Anymal. For more information about quadruped robots, check out the following websites
 
-
-* `Unitree <https://github.com/unitreerobotics>`_
+* `Unitree Robotics <https://github.com/unitreerobotics>`_
 
 * `DEEP_ROBOTS <https://www.deeprobotics.cn/>`_
 
@@ -34,12 +33,10 @@ The project now supports Unitree A1 robot and DeepRobotics Lite2A robot, and can
 Source Code Structure
 ==================
 
-You can find the source code at `GitHub <https://github.com/TopHillRobotics/quadruped-robot/>`_. The source code includes four directories
+You can find the source code at `GitHub <https://github.com/TopHillRobotics/quadruped-robot/>`_. The source code includes five major directories
 
-* **demo** contains various demos to understand the software architecture and algorithms.
-
-* **extern** contains the third-party dependencies to successfully run our code.
-
-* **quadruped** contains the core algorithms of our project.
-
-* **simulation** contains the configuration to run the simulation.
+* **demo** has many demo examples to help users understand the software usage and the project architecture itself.
+* **extern** contains the third-party dependencies to successfully compile and run the code.
+* **navigation** contains the codes for SLAM and navigation.
+* **quadruped** contains the core modules defining robots, state, planner, dynamics and supporting algorithms.
+* **simulation** contains the configuration to run demos in simulation.
