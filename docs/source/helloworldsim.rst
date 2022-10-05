@@ -1,3 +1,5 @@
+.. _helloworld_sim_reference-label:
+
 Hello World in Simulation
 *********************
 
