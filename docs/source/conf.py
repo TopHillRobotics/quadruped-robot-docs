@@ -18,7 +18,7 @@ version = '0.1.0'
 #     'sphinx.ext.autosummary',
 #     'sphinx.ext.intersphinx'
 # ]
-extensions = []
+extensions = ['sphinx.ext.intersphinx']
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
