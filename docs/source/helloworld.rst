@@ -5,7 +5,11 @@ The Hello World demo (``demo/demo_hellowold``) is also a good exaple to understa
 
 .. toctree::
    :maxdepth: 2
-   
-helloworldsim.rst
 
-helloworldreal.rst
+.. literalinclude:: helloworldsim.RST
+  :language: RST
+  
+
+.. literalinclude:: helloworldreal.RST
+  :language: RST  
+
