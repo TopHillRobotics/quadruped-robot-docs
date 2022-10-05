@@ -6,6 +6,6 @@ The Hello World demo (``demo/demo_hellowold``) is also a good exaple to understa
 .. toctree::
    :maxdepth: 2
    
-In Simulation <helloworldsim.rst>
+helloworldsim.rst
 
-In Real Environemt <helloworldreal.rst>
+helloworldreal.rst
