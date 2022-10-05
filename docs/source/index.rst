@@ -19,9 +19,9 @@ This project supports many quadruped robots (Unitree-robotics, Deep-robotics and
 .. toctree::
    :maxdepth: 2
    
-   overview.rst
-   installation.rst
-   helloworld.rst
-   demo.rst
-   references.rst
+   Overview <overview.rst>
+   Installation <installation.rst>
+   Hello World <helloworld.rst>
+   Demos <demo.rst>
+   Reference <references.rst>
 
