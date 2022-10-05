@@ -1,12 +1,12 @@
 Hello World
 *********************
 
-The Hello World demo (``demo/demo_hellowold``) is a good exaple to understand the logistic of running with our code. Here, we use a unitree A1 quadruped robot to explain the helloworld demo.
+The Hello World demo (``demo/demo_hellowold``) is a good exaple to understand the logistic of running with our code. Here, we use a Unitree A1 quadruped robot to explain the helloworld demo.
 
 Initializzing the ROS node
 =======================
 
-Since our simulation is developped in ROS, we first need to initialize the ROS node first. It initializes the ROS components that our program needs in order to communicate to other programs.
+Since our code is developped in ROS, we need initializing the ROS node first. Using ROS components, our program can communicate to other programs.
 
 .. code-block:: c++
 
@@ -16,16 +16,16 @@ Since our simulation is developped in ROS, we first need to initialize the ROS n
 Getting the YMAL path
 ============
 
-Every demo has its own configuration and parameters. These parameters are stored in a ``.yaml`` file. We need to tell where the ``.yaml`` is and later we can load parameters from the given ``.yaml`` file. In this example, a unitree A1 robot is used and its configurations are store in ``a1sim`` for simulation. the helloworld example is stored in the directory ``a1sim``. We can use the following commands to get the directory ``a1sim/demo_helloworld``.
+Every demo has its own configuration and parameters. These parameters are stored in a ``.yaml`` file. We need tell where the ``.yaml`` is and later we can load parameters from the given ``.yaml`` file. In this example, a Unitree A1 robot is used and its configurations are store in ``demo_helloworld/sim_config`` for simulation. We set a robot name as A1, then we will get the directory ``demo/demo_helloworld``.
 
 .. code-block:: c++
-    std::string pathToPackage = ros::package::getPath("a1sim");
-    std::string pathToNode =  pathToPackage + ros::this_node::getName();
+
+    std::string robotName = "A1";
 
 Resetting the Gazebo controller and robot model
 ===========================================
 
-We reset the Gazebo simulator's controller and the robot model. This can avoid relaunching the Gazebo every time when we run the helloword demo repetitively. This allows the Gazebo to reload the controller plugins and locate the robot at a given position and orientation.
+We reset the Gazebo simulator's controller and the robot model. This allows the Gazebo to reload the controller plugins and locate the robot at the given position and orientation. Note that, this can avoid relaunching the Gazebo every time when we re-run the helloword demo. 
 
 .. code-block:: c++
     
@@ -35,11 +35,11 @@ We reset the Gazebo simulator's controller and the robot model. This can avoid r
 Creating a robot
 ================
 
-After launching the Gazebo, we create a robot (unitree A1) using the specified parameters stored in the  ``a1sim/demo_helloworld/config/a1_sim.yaml`` file.
+After launching the Gazebo, we create a robot (Unitree A1) using the specified parameters stored in the  ``demo/demo_helloworld/sim_config/main.yaml`` file.
 
 .. code-block:: c++
 
-    qrRobot *quadruped = new qrRobotA1Sim(nh, pathToNode + "/config/a1_sim.yaml");
+    qrRobot *quadruped = new qrRobotSim(nh, robotName, LocomotionMode::VELOCITY_LOCOMOTION);
 
  We also need to initialize a few robot properties by receiving observation from Gazebo.
 
@@ -51,7 +51,7 @@ After launching the Gazebo, we create a robot (unitree A1) using the specified p
 Executing actions
 ===============
 
-Now the initiliazation is finished. We are ready to execute actions. First, we let the robot perform the first action, standing up. It takes 3 seconds to stand up and keep 5 seconds before any other action. The parameter 0.001 is the specified time step (control frequency). You may try different arguments to understand the action. 
+Now the initiliazation is finished. We are ready to execute standing actions. First, we let the robot perform the first action, standing up. It takes 3 seconds to stand up and keep 5 seconds before any other action. The parameter 0.001 is the specified time step (control frequency is 1000Hz). You may try different arguments to understand the action. 
 
 .. code-block:: c++
 
@@ -99,5 +99,10 @@ Third, in a new terminal, launch a demo and run the quadruped controller node. H
 
 .. code-block:: c++
 
-    rosrun a1sim demo_helloworld
+    rosrun demo demo_helloworld sim
 
+or omit ``sim`` by default
+
+.. code-block:: c++
+
+    rosrun demo demo_helloworld
