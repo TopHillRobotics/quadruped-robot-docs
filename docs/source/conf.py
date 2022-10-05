@@ -18,7 +18,9 @@ version = '0.1.0'
 #     'sphinx.ext.autosummary',
 #     'sphinx.ext.intersphinx'
 # ]
-extensions = ['sphinx.ext.intersphinx']
+extensions = ['sphinx.ext.intersphinx',
+              'sphinx.ext.autosectionlabel'
+]
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
