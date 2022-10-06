@@ -11,7 +11,7 @@ robot. Navigation module contains algorithms and demos that allow a mobile robot
     :alt: ROS gmapping
 
 .. image:: https://github.com/TopHillRobotics/quadruped-robot/blob/develop/media/cartographer_demo.png
-    :width: 300
+    :height: 300
     :alt: ROS cartographer
 
 Source Code Structure
