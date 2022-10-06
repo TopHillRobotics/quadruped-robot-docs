@@ -17,7 +17,7 @@ robot. Navigation module contains algorithms and demos that allow a mobile robot
 Source Code Structure
 ===========
 
-You can find the source code of the SLAM and navigation modules at `GitHub <https://github.com/TopHillRobotics/quadruped-robot/tree/develop/navigation/>`. It includes three directories.
+You can find the source code of the SLAM and navigation modules at https://github.com/TopHillRobotics/quadruped-robot/tree/develop/navigation. It includes three directories.
 
 - **sensor_gazebo_plugin** contains the Gazebo plugins of a few widely used sensors.
 
