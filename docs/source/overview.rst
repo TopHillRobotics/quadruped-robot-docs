@@ -8,7 +8,7 @@ The project now supports A1 robot (Unitree-Robotics) and Lite2A robot (Deep-Robo
 
 * `Unitree Robotics <https://github.com/unitreerobotics>`_
 
-* `DEEP ROBOTS <https://www.deeprobotics.cn/>`_
+* `Deep Robotics <https://www.deeprobotics.cn/>`_
 
 * `AnyRobotics <https://www.anybotics.com/anymal-autonomous-legged-robot/>`_
 
