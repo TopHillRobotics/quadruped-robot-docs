@@ -23,6 +23,7 @@ This project supports the quadruped robots designed by Unitree-robotics, Deep-ro
    Source Code Structure <structure.rst>
    Installation <installation.rst>
    Hello World <helloworld.rst>
+   Navigation <navigation.rst>
    Demos <demo.rst>
    Reference <references.rst>
 
