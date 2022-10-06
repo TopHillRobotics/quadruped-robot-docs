@@ -8,9 +8,11 @@ robot. Navigation module contains algorithms and demos that allow a mobile robot
 
 .. image:: https://github.com/TopHillRobotics/quadruped-robot/blob/develop/media/gmapping_demo.png
     :height: 300
+    :alt: ROS gmapping
 
 .. image:: https://github.com/TopHillRobotics/quadruped-robot/blob/develop/media/cartographer_demo.png
     :width: 300
+    :alt: ROS cartographer
 
 Source Code Structure
 ===========
@@ -75,6 +77,7 @@ rosrun demo demo_slam_gmapping
 ```
 
 Or you can launch cartographer
+
 ```
 rosrun demo demo_slam_cartographer
 ```
