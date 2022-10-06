@@ -24,7 +24,7 @@ Every demo has its own configuration and parameters. These parameters are stored
 
     std::string pathToPackage = ros::package::getPath("demo");
     std::string pathToNode =  pathToPackage + ros::this_node::getName();
-    std::string robotName = "A1";
+    std::string robotName = "a1";
 
 The first two lines are unnecessary in the Hello World demo. However, they may be necessary in other demos.
 
