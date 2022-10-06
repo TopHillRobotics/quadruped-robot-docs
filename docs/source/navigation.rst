@@ -6,11 +6,11 @@ The SLAM (simultaneous localization and mapping) module contains algorithms and 
 robot. Navigation module contains algorithms and demos that allow a mobile robot perform motion planning and autonomous navigation. Autonomous navigation often requires generating the map of the surrounding environment in order to navigate safely. A map is often created by sensors such as camera, sonar and laser sensor. Below are some snapshots of SLAM and navigation. 
 
 
-.. image:: https://github.com/TopHillRobotics/quadruped-robot/blob/develop/media/gmapping_demo.png
+.. image:: "https://github.com/TopHillRobotics/quadruped-robot/blob/develop/media/gmapping_demo.png"
     :height: 300
     :alt: ROS gmapping
 
-.. image:: https://github.com/TopHillRobotics/quadruped-robot/blob/develop/media/cartographer_demo.png
+.. image:: "https://github.com/TopHillRobotics/quadruped-robot/blob/develop/media/cartographer_demo.png"
     :height: 300
     :alt: ROS cartographer
 
