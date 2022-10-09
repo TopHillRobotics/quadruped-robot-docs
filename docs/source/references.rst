@@ -3,15 +3,15 @@
 References
 ==================
 
-
-1. |dicarloj2018iros|
-2. |bledt2018iros|
-3. |bledt2018icra|
-4. |focchim2017ar|
-5. |leeyh2017iros|
-6. |dax2020|
-7. |fankhauserp2018icra|
-8. |fankhauserp2018eth|
-9. |kimd2019|
-10. www.ros.org
-11. www.gazebosim.org
+#. |Gonzalez2011book|
+#. |dicarloj2018iros|
+#. |bledt2018iros|
+#. |bledt2018icra|
+#. |focchim2017ar|
+#. |leeyh2017iros|
+#. |dax2020|
+#. |fankhauserp2018icra|
+#. |fankhauserp2018eth|
+#. |kimd2019|
+#. www.ros.org
+#. www.gazebosim.org
