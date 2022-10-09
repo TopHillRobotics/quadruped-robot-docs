@@ -1,4 +1,4 @@
-The Open Source Quadruped-Robot @The TopHill Robotics
+The Open Source Quadruped-Robot @TopHill Robotics
 ===========================================
 
 This project is developed by Robot Motion and Vision Laboratory at East China Normal University.
