@@ -3,7 +3,6 @@
 References
 ==================
 
-Please check out the following papers for the algorithm details.
 
 1. |dicarloj2018iros|
 2. |bledt2018iros|
