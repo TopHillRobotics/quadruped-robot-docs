@@ -42,7 +42,7 @@ You also need install the pointcloud_to_laserscan ROS package in order to conver
 
 .. code-block:: console
     
-    sudo apt install ros-${your_ros_version}-pointcloud_to_laserscan
+    sudo apt install ros-${your_ros_version}-pointcloud-to-laserscan
 
 
 * **Installing cartographer**
