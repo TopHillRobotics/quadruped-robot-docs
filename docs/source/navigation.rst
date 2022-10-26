@@ -34,12 +34,14 @@ Installation
 As a ROS node, the gmapping package provides laser-based SLAM. Using gmapping, you can create a 2D occupancy grid map from laser and pose data collected by a mobile robot either in simulation or in real environment. The gmapping package is integrated in ROS, you can just run it. Visit https://wiki.ros.org/slam_gmapping for more details. In case you don't have gmapping installed, run the following code to install gmapping.
 
 .. code-block:: console
+    
     sudo apt install ros-${your_ros_version}-gmapping
 
 
 You also need install the pointcloud_to_laserscan ROS package in order to convert 3D point cloud to 2D laser.
 
 .. code-block:: console
+    
     sudo apt install ros-${your_ros_version}-pointcloud_to_laserscan
 
 
@@ -48,6 +50,7 @@ You also need install the pointcloud_to_laserscan ROS package in order to conver
 The cartographer_ros package is available in ROS. In case you don't have cartographer installed, run the following code to install cartographer.
 
 .. code-block:: console
+    
     sudo apt install ros-${your_ros_version}-cartographer-ros ros-${your_ros_version}-cartographer-rviz
 
 
@@ -59,6 +62,7 @@ Running Demos
 First, in one terminal, source the `setup.bash` to set up the environment
 
 .. code-block:: console
+    
     source ${your_workspace}/devel/setup.bash
 
 
@@ -75,18 +79,21 @@ Third, in a new terminal, launch a SLAM demo (see the following commands). It st
 You can launch slam_gmapping
 
 .. code-block:: console
+    
     rosrun demo demo_slam_gmapping
 
 
 Or you can launch cartographer
 
 .. code-block:: console
+    
     rosrun demo demo_slam_cartographer
 
 
 For navigation, you can run the following demo
 
 .. code-block:: console
+    
     rosrun demo demo_navigation_2d_use_map
 
 
@@ -95,6 +102,7 @@ Here, you can use the 2D Nav Goal to let your robot move to the target position.
 You can run the following demo, building map and perform navigation simultaneously
 
 .. code-block:: console
+    
     rosrun demo demo_navigation_2d_gmapping
 
 
