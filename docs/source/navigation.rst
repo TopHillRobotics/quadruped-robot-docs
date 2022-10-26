@@ -68,7 +68,7 @@ roslaunch qr_gazebo normal.launch rname:=a1 wname:=mini_maze use_xacro:=true use
 
 Here, **rname** specifies the robot you use, **wname** specifies the Gazebo world that you use, **use_xacro** indicates if you use URDF or XACRO file, **use_lidar** specifies if you use lidar or not.
 
-Third, in a new terminal, launch a SLAM demo (see the following commands). It starts the rviz node and the demo_trot_keyboard. You can control the robot moving and contruct a map using keyboard.
+Third, in a new terminal, launch a SLAM demo (see the following commands). It starts the rviz node and the demo_trot_keyboard. Using keyboard, you can control the robot moving and generate a map.
 
 You can launch slam_gmapping
 
@@ -80,4 +80,21 @@ Or you can launch cartographer
 
 ```
 rosrun demo demo_slam_cartographer
+
 ```
+For navigation, you can run the following demo
+
+```
+rosrun demo demo_navigation_2d_use_map
+```
+
+Here, you can use the 2D Nav Goal to let your robot move to the target position. You may chose the LiDAR or camera for obstacle avoidance. Note that, the maps are provided by the slam demos mentioned above. You can use map_server to save maps.
+
+You can run the following demo, building map and perform navigation simultaneously
+
+```
+rosrun demo demo_navigation_2d_gmapping
+```
+
+In an analogous manner, you may use cartographer instead of gmapping.
+
